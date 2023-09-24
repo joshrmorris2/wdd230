@@ -12,13 +12,32 @@ header {
     background-color: rgb(83, 14, 148);
     color: azure;
     margin: auto;
+    text-align: center;
 }
 
 nav {
-    background-color: black;
-    color: azure;
     width: 600px;
     margin: auto;
+}
+
+nav ul {
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: azure;
+    display: block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav ul li a:hover {
+    background-color: rgb(83, 80, 80);
 }
 
 h1 {
@@ -29,17 +48,21 @@ h1 {
 
 .grid-container {
     display: grid;
-    row-gap: 50px;
+    row-gap: 5px;
     grid-template-columns: auto 600px auto;
     grid-template-rows: min-content;
-    background-color: rgb(148, 146, 146);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .grid-item1,
 .grid-item2,
 .grid-item3 {
     grid-column: 2 / span 1;
+    width: 600px;
     margin: auto;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .grid-item1 {
@@ -48,6 +71,11 @@ h1 {
 
 .grid-item2 {
     grid-row: 2 / span 1;
+}
+
+.grid-item2 ul {
+    list-style-type: none;
+    text-align: left;
 }
 
 .grid-item3 {
