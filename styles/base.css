@@ -15,36 +15,9 @@ header {
     text-align: center;
 }
 
-/*nav {
-    width: 600px;
-    margin: auto;
-}
-
-nav ul {
-    background-color: black;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    color: azure;
-    display: block;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-nav ul li a:hover {
-    background-color: rgb(83, 80, 80);
-}*/
-
 h1 {
     margin: auto;
 }
-
-
 
 .grid-container {
     display: grid;
@@ -149,6 +122,10 @@ h1 {
     max-width: 580px;
     height: 100vh;
 
+}
+
+h3::first-letter {
+    font-size: 1.5rem;
 }
 
 @media (min-width: 37.5em) {
