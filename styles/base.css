@@ -121,7 +121,10 @@ h1 {
     background-color: #bed;
     max-width: 580px;
     height: 100vh;
+}
 
+iframe {
+    margin: auto;
 }
 
 h3::first-letter {
