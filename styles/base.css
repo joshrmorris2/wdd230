@@ -125,8 +125,10 @@ h1 {
 }
 
 h3::first-letter {
-    font-size: 1.5rem;
+    text-emphasis: open;
 }
+
+
 
 @media (min-width: 37.5em) {
     h1 {
