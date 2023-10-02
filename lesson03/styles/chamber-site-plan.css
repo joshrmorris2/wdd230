@@ -1,0 +1,11 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #523178;
+    color: #F3EAF4;
+    padding: .5rem;
+    margin: auto;
+    text-align: left;
+}
