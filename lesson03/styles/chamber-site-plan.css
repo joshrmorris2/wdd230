@@ -1,23 +1,19 @@
 body {
+    background-color: #F3EAF4;
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
     background-color: #523178;
     color: #F3EAF4;
-    padding: .5rem;
+    padding: 1em;
     margin: auto;
     text-align: left;
-    font-size: .5rem;
 }
 
-header strong {
-    font-size: 1rem;
-}
 
 
 main {
-    background-color: #F3EAF4;
     width: 600px;
     margin: auto;
 }
