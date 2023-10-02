@@ -18,5 +18,6 @@ header strong {
 
 main {
     background-color: #F3EAF4;
-
+    width: 600px;
+    margin: auto;
 }
