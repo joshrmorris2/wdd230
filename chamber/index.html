@@ -7,6 +7,7 @@
     <title>Hillsboro Chamber of Commerce</title>
     <meta name="author" content="Josh Morris">
     <meta name="description" content="Mock chamber of commerce website for web development education">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <!--
         need favicon
@@ -24,10 +25,37 @@
 </head>
 
 <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <header>
+        <H1>Hillsboro<br><span>Chamber of Commerce</span></H1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img src="" alt="Hero image Placeholder">
+        <a href="">Call to action Placeholder</a>
+        <section class="events">
+            <p>Placeholder</p>
+        </section>
+        <section class="weather">
+            <p>Placeholder</p>
+        </section>
+        <section class="spotlights">
+            <p>Placeholder</p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
+        <p>This is a fictional site for web development education.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
