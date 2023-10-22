@@ -9,6 +9,8 @@
     <meta name="description" content="Mock chamber of commerce website for web development education">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <!--
         need favicon
     -->
@@ -47,18 +49,28 @@
         </ul>
     </nav>
     <main>
-        <img class="grid-item1" src="https://images.unsplash.com/photo-1600849201385-980094c9037a" alt="Hero image">
-        <div class="grid-container">
-            <a href="">Call to action Placeholder</a>
-            <section class="events">
-                <p>Placeholder</p>
-            </section>
-            <section class="weather">
-                <p>Placeholder</p>
-            </section>
-            <section class="spotlights">
-                <p>Placeholder</p>
-            </section>
+        <div class="grid-position">
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/wdd230-org-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/wdd230-org-medium.webp">
+                    <img src="images/wdd230-org-large.webp" alt="Hero Image">
+                </picture>
+                <p></p>
+            </div>
+            <!--img class="grid-item1" src="https://images.unsplash.com/photo-1600849201385-980094c9037a" alt="Hero image"-->
+            <div class="grid-container">
+                <a class="call-to-action">Call to action Placeholder</a>
+                <section class="events">
+                    <p>Events Placeholder</p>
+                </section>
+                <section class="weather">
+                    <p>Current Windchill is: <span id="windchill"></span></p>
+                </section>
+                <section class="spotlights">
+                    <p>Spotlights Placeholder</p>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
@@ -67,6 +79,7 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
