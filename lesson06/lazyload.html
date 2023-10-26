@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load learning exercise</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load learning exercise</h1>
+    </header>
+    <main>
+        <img src="//via.placeholder.com/400x600?text=Image+1" alt="Placeholder kitten Image" width="400" height="600"
+            loading="eager">
+        <img src="//via.placeholder.com/400x600?text=Image+2" alt="Placeholder kitten Image" width="400" height="600"
+            loading="lazy">
+        <img src="//via.placeholder.com/400x600?text=Image+3" alt="Placeholder kitten Image" width="400" height="600"
+            loading="lazy">
+        <img src="//via.placeholder.com/400x600?text=Image+4" alt="Placeholder kitten Image" width="400" height="600"
+            loading="lazy">
+        <img src="//via.placeholder.com/400x600?text=Image+5" alt="Placeholder kitten Image" width="400" height="600"
+            loading="lazy">
+        <img src="//via.placeholder.com/400x600?text=Image+6" alt="Placeholder kitten Image" width="400" height="600"
+            loading="lazy">
+    </main>
+    <footer>
+        <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
