@@ -4,11 +4,12 @@ body {
 }
 
 header {
+    display: flex;
     padding: .5rem;
     background-color: #523178;
     color: #F3EAF4;
-    margin: auto;
-    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 h1 {
@@ -39,6 +40,7 @@ header img {
 
 main {
     max-width: 960px;
+    margin: auto;
     margin-bottom: 1em;
     background-color: #F3EAF4;
     text-align: center;
@@ -64,10 +66,10 @@ main {
 
 #menu {
     font-size: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: none;
     padding: 3px 7px 6px;
-    background-color: #F3EAF4;
-    color: #000;
+    background-color: #523178;
+    color: white;
     position: absolute;
     top: 1rem;
     right: 1rem;
