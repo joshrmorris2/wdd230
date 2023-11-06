@@ -46,6 +46,11 @@ main {
     text-align: center;
 }
 
+.sidebar {
+    display: grid;
+    gap: 1em;
+}
+
 .grid-container {
     display: grid;
     row-gap: 5px;
