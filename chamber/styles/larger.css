@@ -1,0 +1,10 @@
+@media screen and (min-width: 1000px) {
+    main.sidebar {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    div.column1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
