@@ -153,7 +153,7 @@ main {
     justify-content: center;
 }
 
-main img {
+div.hero img {
     margin: 0em 1em;
     width: calc(100% - 1em);
     height: auto;
@@ -172,6 +172,10 @@ main.sidebar {
 
 .hover:hover {
     box-shadow: none;
+}
+
+div.column2 img {
+    width: 100%;
 }
 
 .grid-position {
