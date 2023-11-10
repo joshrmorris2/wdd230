@@ -1,0 +1,21 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(372px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#cards>* {
+    text-align: center;
+}
+
+#cards>section {
+    background-color: #967bd1;
+    padding: 0em 1em 1em 1em;
+    border: 2px solid rgb(109, 91, 148);
+}
+
+h1 {
+    text-align: center;
+}

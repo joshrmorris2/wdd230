@@ -164,7 +164,6 @@ main img {
 }
 
 main.sidebar {
-
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr;

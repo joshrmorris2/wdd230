@@ -4,6 +4,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    main.column1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
     .hover:hover {
         box-shadow: 0 0 50px #333;
     }
