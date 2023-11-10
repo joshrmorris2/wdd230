@@ -1,4 +1,13 @@
 @media screen and (min-width: 500px) {
+    main.sidebar {
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
     .grid-container {
         grid-template-columns: 1fr 1fr;
     }

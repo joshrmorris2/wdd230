@@ -163,6 +163,18 @@ main img {
     -webkit-mask-image: linear-gradient(black, transparent);
 }
 
+main.sidebar {
+
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.hover:hover {
+    box-shadow: none;
+}
+
 .grid-position {
     position: relative;
 }

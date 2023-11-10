@@ -1,0 +1,28 @@
+{
+    "family name": "Smith",
+    "Joined Ward": "01-01-2021",
+    "Family size": 4,
+    "Bishopric visit": true,
+    "Family Members": [
+        {
+            "Name": "John",
+            "Sex": "Male",
+            "DOB": "01-01-1990"
+        },
+        {
+            "Name": "Bobby",
+            "Sex": "Male",
+            "DOB": "01-01-1992"
+        },
+        {
+            "Name": "Sally",
+            "Sex": "Female",
+            "DOB": "01-01-2020"
+        },
+        {
+            "Name": "Nick",
+            "Sex": "Male",
+            "DOB": "01-01-2022"
+        }
+    ]
+}
