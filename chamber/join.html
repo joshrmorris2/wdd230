@@ -32,7 +32,7 @@
 
 <body>
     <header>
-        <H1>Hillsboro<br><span>Chamber of Commerce</span></H1>
+        <h1>Hillsboro<br><span>Chamber of Commerce</span></h1>
         <!-- Rounded switch -->
         <label class="switch">
             <input type="checkbox">
@@ -48,27 +48,30 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Sign Up</h1>
+    <main class="form">
+        <h2>Sign Up</h2>
         <form onsubmit="return validatePassword()" action="thankyou.html" method="get">
             <fieldset>
-                <label>First Name <input type="text" id="firstName" name="fname" required></label>
-                <label>Last Name <input type="text" id="lastName" name="lname" required></label>
-                <label>Title/Position <input type="text" id="title" name="title" required
+                <label class="top">First Name <input type="text" id="firstName" name="fname" required></label>
+                <label class="top">Last Name <input type="text" id="lastName" name="lname" required></label>
+                <label class="top">Title/Position <input type="text" id="title" name="title" required
                         pattern="[a-zA-Z\- ]{7,}"></label>
-                <label>Email <input type="email" id="email" name="email" required
+                <label class="top">Email <input type="email" id="email" name="email" required
                         placeholder="example@example.com"></label>
-                <label>Phone Number <input type="tel" id="phone" name="phone" required></label>
-                <label>Organization's Name <input type="text" id="orgName" name="orgName" required></label>
-                <label>Membership Level
-                    <select name="membershipLevel" id="membershipLevel">
-                        <option value="NP Membership">NP Membership (No fee)</option>
-                        <option value="Bronze Membership">Bronze Membership</option>
-                        <option value="Silver Membership">Silver Membership</option>
-                        <option value="Gold Membership">Gold Membership</option>
-                    </select>
-                </label>
-                <label>Organization's Description
+                <label class="top">Phone Number <input type="tel" id="phone" name="phone" required></label>
+                <label class="top">Organization's Name <input type="text" id="orgName" name="orgName" required></label>
+            </fieldset>
+            <fieldset>
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="membershipLevel" value="nonprofit"> NP Membership
+                    (No fee)</label>
+                <label class="sbs"><input type="radio" name="membershipLevel" value="bronze"> Bronze
+                    Membership</label>
+                <label class="sbs"><input type="radio" name="membershipLevel" value="silver"> Silver
+                    Membership</label>
+                <label class="sbs"><input type="radio" name="membershipLevel" value="gold"> Gold
+                    Membership</label>
+                <label class="top">Organization's Description
                     <textarea name="orgDescription" id="orgDescription" cols="30" rows="10"></textarea>
                 </label>
                 <input type="hidden" id="timestamp" name="timestamp">
