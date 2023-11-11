@@ -10,16 +10,16 @@ getLinks();
 
 function displayLinks(lessons) {
     let list = document.querySelector('ul.activities');
-    lessons.forEach(lesson => {
+    lessons.forEach((lesson) => {
         //create list item
         let card = document.createElement('li');
-        card.textContent = `${lesson}: `
+        card.textContent = `${lesson.lesson}: `
 
-        lessons.forEach(links => {
+        lesson.links.forEach(link => {
             let activity = document.createElement('a');
 
-            activity.textContent = `${links.title}`;
-            activity.setAttribute('href', links.url)
+            activity.textContent = `${link.title}`;
+            activity.setAttribute('href', link.url)
 
             card.appendChild(activity);
             card.appendChild(document.createTextNode(' | '));
