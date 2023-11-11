@@ -1,4 +1,4 @@
-const linksURL = "https://joshrmorris2.github.io/data/links.json";
+const linksURL = "https://joshrmorris2.github.io/wd230/data/links.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
