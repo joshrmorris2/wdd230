@@ -11,15 +11,17 @@ hamButton.addEventListener('click', () => {
 });
 
 /*Dark mode*/
-const switchBox = document.querySelector('.switch');
-const body = document.querySelector('body');
+document.addEventListener('DOMContentLoaded', () => {
+    const switchBox = document.querySelector('.switch input[type="checkbox"]');
+    const body = document.querySelector('body');
 
-switchBox.addEventListener('click', () => {
-    if (switchBox.checked = true) {
-        body.style.background = '#000';
-        body.style.color = '#F3EAF4';
-    } if (switchBox.checked = false) {
-        body.style.background = '#F3EAF4';
-        body.style.color = '#000';
-    }
+    switchBox.addEventListener('change', () => {
+        if (switchBox.checked) {
+            body.style.background = '#000';
+            body.style.color = '#F3EAF4';
+        } else {
+            body.style.background = '#F3EAF4';
+            body.style.color = '#000';
+        }
+    });
 });

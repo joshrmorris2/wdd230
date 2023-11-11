@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillsboro Chamber of Commerce</title>
+    <meta name="author" content="Josh Morris">
+    <meta name="description" content="Mock chamber of commerce website for web development education">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--
+        need favicon
+    -->
+    <link rel="icon" href="favicon.ico">
+
+    <!--Social Media meta data below-->
+    <meta property="og:title" content="Hillsboro Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <!--
+        need photo
+    -->
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://joshrmorris2.github.io/wdd230/">
+    <!--Open Sans from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <H1>Hillsboro<br><span>Chamber of Commerce</span></H1>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+
+    </main>
+    <footer>
+        <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
+        <p>This is a fictional site for web development education.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
