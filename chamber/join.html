@@ -49,13 +49,44 @@
         </ul>
     </nav>
     <main>
-
+        <h1>Sign Up</h1>
+        <form onsubmit="return validatePassword()" action="thankyou.html" method="get">
+            <fieldset>
+                <label>First Name <input type="text" id="firstName" name="fname" required></label>
+                <label>Last Name <input type="text" id="lastName" name="lname" required></label>
+                <label>Title/Position <input type="text" id="title" name="title" required
+                        pattern="[a-zA-Z\- ]{7,}"></label>
+                <label>Email <input type="email" id="email" name="email" required
+                        placeholder="example@example.com"></label>
+                <label>Phone Number <input type="tel" id="phone" name="phone" required></label>
+                <label>Organization's Name <input type="text" id="orgName" name="orgName" required></label>
+                <label>Membership Level
+                    <select name="membershipLevel" id="membershipLevel">
+                        <option value="NP Membership">NP Membership (No fee)</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Organization's Description
+                    <textarea name="orgDescription" id="orgDescription" cols="30" rows="10"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp">
+            </fieldset>
+            <button type="submit">Sign up</button>
+        </form>
     </main>
     <footer>
         <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
         <p>This is a fictional site for web development education.</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('timestamp').value = Date.now();
+        });
+    </script>
+    <script src="scripts/validatepassword.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
 </body>

@@ -46,14 +46,15 @@
         <h1>Sign Up</h1>
         <form onsubmit="return validatePassword()" action="record.html" method="get">
             <fieldset>
-                <label class="top">Username</label><input type="text" id="username" name="username" required>
-                <label class="top">Password</label><input type="password" id="pwd" name="password" required
-                    pattern="[A-Za-z0-9] {8-32}">
-                <label class="top">Re-verify password</label><input type="password" id="pwd1" name="password1" required>
-                <label class="top">Email</label><input type="email" pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9]\.+[a-zA-Z]$"
-                    id="email" name="email" required>
-                <label class="top">Page Rating</label><input type="range" min="1" max="10" step="1" id="rate"
-                    name="rate">
+                <label class="top">Username</label><label type="text" id="username" name="username" required>
+                    <label class="top">Password</label><input type="password" id="pwd" name="password" required
+                        pattern="[A-Za-z0-9] {8-32}">
+                    <label class="top">Re-verify password</label><input type="password" id="pwd1" name="password1"
+                        required>
+                    <label class="top">Email</label><input type="email"
+                        pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9]\.+[a-zA-Z]$" id="email" name="email" required>
+                    <label class="top">Page Rating</label><input type="range" min="1" max="10" step="1" id="rate"
+                        name="rate">
             </fieldset>
             <input type="submit" value="Sign Up" class="submitBtn">
         </form>
@@ -62,7 +63,7 @@
         <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/checksame.js"></script>
+    <script src="scripts/validatepassword.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
