@@ -22,7 +22,7 @@ function visitMessage() {
         } else {
             // More than a day
             const pluralize = Math.round(timesinceVisited / msToDays) === 1 ? "day" : "days";
-            todayElement.textContent = "You last visited " + (Math.round(timesinceVisited / msToDays)) + " ${pluralize} ago.";
+            todayElement.textContent = "You last visited " + (Math.round(timesinceVisited / msToDays)) + ` ${pluralize} ago.`;
         }
     }
     localStorage.setItem('lastTimeVisited', today);
