@@ -51,8 +51,8 @@
                         pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,32}"
                         title="Password must contain at least one letter, one number and 8-32 characters"></label>
                 <label class="top">Re-verify password<input type="password" id="pwd1" name="password1" required></label>
-                <label class="top">Email<input type="email" pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9]\.+[a-zA-Z]$"
-                        id="email" name="email" required title="Not a valid email"></label>
+                <label class="top">Email<input type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email"
+                        name="email" required title="Not a valid email"></label>
                 <label class="sbs">Page Rating: <input type="range" min="1" max="10" step="1" id="rate" name="rate"
                         oninput="updateValue(this.value)">
                     <p id="rangeValue">Selected Value: <span id="selectedValue">5</span></p>
