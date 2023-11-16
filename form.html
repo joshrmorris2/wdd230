@@ -46,15 +46,17 @@
         <h1>Sign Up</h1>
         <form onsubmit="return validatePassword()" action="record.html" method="get">
             <fieldset>
-                <label class="top">Username</label><label type="text" id="username" name="username" required>
-                    <label class="top">Password</label><input type="password" id="pwd" name="password" required
-                        pattern="[A-Za-z0-9] {8-32}">
-                    <label class="top">Re-verify password</label><input type="password" id="pwd1" name="password1"
-                        required>
-                    <label class="top">Email</label><input type="email"
-                        pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9]\.+[a-zA-Z]$" id="email" name="email" required>
-                    <label class="top">Page Rating</label><input type="range" min="1" max="10" step="1" id="rate"
-                        name="rate">
+                <label class="top">Username<input type="text" id="username" name="username" required></label>
+                <label class="top">Password<input type="password" id="pwd" name="password" required
+                        pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,32}"
+                        title="Password must contain at least one letter, one number and 8-32 characters"></label>
+                <label class="top">Re-verify password<input type="password" id="pwd1" name="password1" required></label>
+                <label class="top">Email<input type="email" pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9]\.+[a-zA-Z]$"
+                        id="email" name="email" required title="Not a valid email"></label>
+                <label class="sbs">Page Rating: <input type="range" min="1" max="10" step="1" id="rate" name="rate"
+                        oninput="updateValue(this.value)">
+                    <p id="rangeValue">Selected Value: <span id="selectedValue">5</span></p>
+                </label>
             </fieldset>
             <input type="submit" value="Sign Up" class="submitBtn">
         </form>
@@ -63,6 +65,12 @@
         <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+    <script>
+        function updateValue(value) {
+            // Update the value displayed to the user
+            document.getElementById('selectedValue').innerText = value;
+        }
+    </script>
     <script src="scripts/validatepassword.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
