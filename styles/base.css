@@ -12,6 +12,12 @@ header {
     justify-content: center;
 }
 
+figure img,
+figure span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 h1 {
     margin: auto;
 }
