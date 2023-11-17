@@ -1,8 +1,8 @@
-const currentTemp = document.querySelector('#current-temp')
-const weatherIcon = document.querySelector('#weather-icon')
-const captionDesc = document.querySelector('figcaption')
+const currentTemp = document.querySelector(' #current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=cdcaf3e9a2f04d3e252950d131f5edd0'
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
 
 async function apiFetch() {
     try {
@@ -14,17 +14,18 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error)
-    }
-}
+        console.log(error);
+    };
+};
 
 apiFetch();
 
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+
     captionDesc.textContent = `${desc}`;
 }
