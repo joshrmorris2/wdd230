@@ -17,10 +17,11 @@ header {
     width: 100%;
 }
 
+#banner div {}
+
 /* The switch - the box around the slider */
 .switch {
     position: absolute;
-
     top: 2.5em;
     right: 2.5em;
     display: inline-block;
@@ -161,6 +162,19 @@ div.hero img {
     position: relative;
 
     -webkit-mask-image: linear-gradient(black, transparent);
+}
+
+#banner div {
+    text-align: center;
+    display: block;
+    background-color: #523178;
+    color: #F3EAF4;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+#banner div span {
+    float: right;
 }
 
 main.sidebar {
