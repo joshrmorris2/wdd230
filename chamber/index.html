@@ -51,14 +51,14 @@
     </nav>
     <main>
         <div class="grid-position">
-            <div class="hero">
+            <!-- <div class="hero">
                 <picture>
                     <source media="(max-width: 500px)" srcset="images/wdd230-org-small.webp">
                     <source media="(max-width: 1000px)" srcset="images/wdd230-org-medium.webp">
                     <img src="images/wdd230-org-large.webp" alt="Hero Image">
                 </picture>
                 <p></p>
-            </div>
+            </div> -->
             <!--img class="grid-item1" src="https://images.unsplash.com/photo-1600849201385-980094c9037a" alt="Hero image"-->
             <div class="grid-container">
                 <a class="call-to-action">Call to action Placeholder</a>
@@ -66,7 +66,12 @@
                     <p>Events Placeholder</p>
                 </section>
                 <section class="weather">
-                    <p>Current Windchill is: <span id="windchill"></span></p>
+                    <figure>
+                        <img src="" alt="" id="weather-icon">
+                        <span id="current-temp"></span><br><br>
+                        <figcaption></figcaption>
+                        <div id="threedayforecast"></div>
+                    </figure>
                 </section>
                 <section class="spotlights">
                     <p>Spotlights Placeholder</p>
@@ -80,7 +85,7 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
