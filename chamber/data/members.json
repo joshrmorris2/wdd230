@@ -1,60 +1,60 @@
 {
     "members": [
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "Precision Body & Paint, Inc.",
+            "address": "14145 SW Tualatin Valley Hwy\nBeaverton, OR 97005",
+            "phone": "(503) 641-5634",
+            "url": "https://precisionfirst.com/",
+            "img": "https://cdn-iongh.nitrocdn.com/KoXSHcSodGPxuhFnmuAtXyppibMLirvG/assets/images/optimized/rev-3032836/precisionfirst.com/wp-content/uploads/2019/07/Precision-Body-and-Paint-Certified-Collision-Center-Beaverton-75ht.png",
+            "memlvl": 4
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "Rice NW Museum of Rocks & Minerals",
+            "address": "26385 NW Groveland Dr.\nHillsboro, OR 97124",
+            "phone": "(503) 647-2418",
+            "url": "https://ricenorthwestmuseum.org/",
+            "img": "https://ricenorthwestmuseum.org/wp-content/uploads/2020/09/MainLogo.jpg",
+            "memlvl": 2
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "Vames, Wang & Sosa",
+            "address": "5920 NE Ray Circle, Suite 145\nHillsboro, OR 97124",
+            "phone": "(503) 660-3641",
+            "url": "https://www.vameswang.com/",
+            "img": "https://www.vameswang.com/wp-content/uploads/2019/08/vames-wang-sosa-lawyers-logo-white-clear-1024x345.png",
+            "memlvl": 4
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "Qorvo",
+            "address": "2300 NE Brookwood Parkway\nHillsboro, OR 97124",
+            "phone": "(503) 615-9000",
+            "url": "https://www.qorvo.com/",
+            "img": "https://guilfordgreenfoundation.org/wp-content/uploads/2021/10/Qorvo-Logo_ID_Brandline_Blk_R_RGB-300x140.jpg",
+            "memlvl": 3
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "Sawyer Networks",
+            "address": "8295 NE Evergreen Parkway, Suite 203\nHillsboro, OR 97124",
+            "phone": "(503) 664-4140",
+            "url": "https://sawyernetworks.com/",
+            "img": "https://sawyernetworks.com/wp-content/uploads/2019/10/logo2019-web-500dpi-e1572048703927.png",
+            "memlvl": 2
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "Bienestar Inc.",
+            "address": "448 S 1st Ave. Ste. 100\nHillsboro, OR 97123",
+            "phone": "(503) 481-0529",
+            "url": "https://bienestar-or.org/",
+            "img": "https://bienestar-or.org/wp-content/uploads/2021/08/Bienestar_logo_color.png",
+            "memlvl": 1
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "memlvl": ""
+            "name": "The Goddard School",
+            "address": "5530 NE Elam Young Pkwy.\nHillsboro, OR 97124",
+            "phone": "(503) 693-1888",
+            "url": "https://www.goddardschool.com/",
+            "img": "https://www.goddardschool.com/content/dam/global/assets/logos/GS_Logo_Condensed_Blue.svg",
+            "memlvl": 1
         }
     ]
 }
