@@ -2,8 +2,7 @@ const banner = document.querySelector('#banner');
 var today = new Date();
 var monTueWed = [1, 2, 3];
 
-//weekdaysToCheck.includes(today.getDay())
-if (true) {
+if (weekdaysToCheck.includes(today.getDay())) {
     console.log(today.getDay())
     const message = document.createElement('div');
     const remove = document.createElement('span');

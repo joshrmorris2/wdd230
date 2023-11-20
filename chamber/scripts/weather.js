@@ -45,12 +45,14 @@ function displayResults(data) {
 
 function displayForecast(data) {
     const currentDate = new Date();
+    const headers = document.createElement('div');
     for (let i = 1; i <= 3; i++) {
         const today = document.createElement('h3');
         today.textContent = dayOfWeek(currentDate.getDay() + i);
-        threeDayFor.appendChild(today);
+        headers.appendChild(today);
     }
 
+    const temperatures = document.createElement('div');
     data.list.forEach((day) => {
         switch (day.dt_txt) {
             default:
@@ -62,11 +64,12 @@ function displayForecast(data) {
                 const todaytemp = document.createElement('p');
 
                 todaytemp.textContent = `${day.main.temp}`;
-                threeDayFor.appendChild(todaytemp);
+                temperatures.appendChild(todaytemp);
         }
 
     });
-
+    threeDayFor.appendChild(headers);
+    threeDayFor.appendChild(temperatures);
 }
 
 function dayOfWeek(day) {

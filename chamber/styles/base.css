@@ -177,6 +177,11 @@ div.hero img {
     float: right;
 }
 
+#threedayforecast div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 main.sidebar {
     justify-content: center;
     display: grid;
