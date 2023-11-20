@@ -1,6 +1,6 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const weatherDesc = document.querySelector('#weather-description');
 const threeDayFor = document.querySelector('#threedayforecast');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=45.52&lon=-122.99&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
@@ -40,7 +40,7 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 
-    captionDesc.textContent = `${desc}`;
+    weatherDesc.textContent = `${desc}`;
 }
 
 function displayForecast(data) {
