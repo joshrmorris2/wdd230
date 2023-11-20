@@ -8,6 +8,11 @@
     display: table-row;
 }
 
+#cards section:nth-child(odd) {
+    background-color: #f2f2f2;
+    /* Add your desired background color for odd rows */
+}
+
 #cards section h2,
 #cards section a,
 #cards section p {
