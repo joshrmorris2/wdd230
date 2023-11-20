@@ -1,0 +1,36 @@
+#cards {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cards section {
+    display: table-row;
+}
+
+#cards section h2,
+#cards section a,
+#cards section p {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* Optional: add borders to cells */
+}
+
+#cards section img {
+    display: none;
+}
+
+#cards h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#cards a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#cards a:hover {
+    text-decoration: underline;
+}
