@@ -34,7 +34,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -63,7 +63,7 @@ function displayForecast(data) {
 
                 const todaytemp = document.createElement('p');
 
-                todaytemp.textContent = `${day.main.temp}`;
+                todaytemp.innerHTML = `${day.main.temp} &deg;F`;
                 temperatures.appendChild(todaytemp);
         }
 
