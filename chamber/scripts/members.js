@@ -9,7 +9,6 @@ async function getMemberData() {
     const data = await response.json();
 
     if (spotlight !== null) {
-
         const head = document.querySelector('head');
         let style = document.createElement('link');
 
@@ -18,7 +17,8 @@ async function getMemberData() {
         head.appendChild(style);
 
         const filtered = data.members.filter(item => item.memlvl >= 3)
-        displayMembers(filtered.slice(0, 3));
+        const shuffled = filtered.sort(() => 0.5 - Math.random());
+        displayMembers(shuffled.slice(0, 3));
     } else {
         displayMembers(data.members);
     }
