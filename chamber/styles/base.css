@@ -22,8 +22,8 @@ header {
 /* The switch - the box around the slider */
 .switch {
     position: absolute;
-    top: 2.5em;
-    right: 2.5em;
+    top: 4em;
+    right: 1.56em;
     display: inline-block;
     width: 60px;
     height: 34px;
@@ -104,8 +104,22 @@ h2 {
 }
 
 #menu {
-    display: none;
-    /* hide hamburger button */
+    font-size: 1.5rem;
+    border: none;
+    padding: 3px 7px 6px;
+    background-color: #523178;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 2.3rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
 }
 
 .navigation {
@@ -138,17 +152,26 @@ h2 {
     font-weight: 700;
 }
 
-.navigation {
-    flex-direction: row;
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
 }
 
-.navigation li {
+.open li a {
     display: block;
-    flex: 1 1 100%;
+}
+
+.active::before {
+    content: "📍 ";
 }
 
 .stuff {
-    margin: 1rem auto;
+    margin: .5em;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
 }
 
 #cardortable {
