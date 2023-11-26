@@ -1,10 +1,28 @@
-const url = 'data/members.json';
+const memUrl = 'data/members.json';
 const cards = document.querySelector('#cards');
+const spotlight = document.querySelector('#spotlights');
+
+
 
 async function getMemberData() {
-    const response = await fetch(url);
+    const response = await fetch(memUrl);
     const data = await response.json();
-    displayMembers(data.members);
+    console.log(spotlight);
+    console.log(spotlight === null);
+    if (spotlight !== null) {
+
+        const head = document.querySelector('head');
+        let style = document.createElement('link');
+
+        style.setAttribute('rel', 'stylesheet');
+        style.setAttribute('href', 'styles/card.css');
+        head.appendChild(style);
+
+        const filtered = data.members.filter(item => item.memlvl >= 3)
+        displayMembers(filtered.slice(0, 3));
+    } else {
+        displayMembers(data.members);
+    }
 }
 
 const displayMembers = (members) => {
@@ -52,6 +70,12 @@ const displayMembers = (members) => {
         card.append(phone);
 
         cards.appendChild(card);
+    });
+}
+
+let filterMembers = (members) => {
+    members.forEach((member) => {
+
     });
 }
 
