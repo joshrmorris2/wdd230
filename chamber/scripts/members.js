@@ -7,8 +7,7 @@ const spotlight = document.querySelector('#spotlights');
 async function getMemberData() {
     const response = await fetch(memUrl);
     const data = await response.json();
-    console.log(spotlight);
-    console.log(spotlight === null);
+
     if (spotlight !== null) {
 
         const head = document.querySelector('head');
@@ -70,12 +69,6 @@ const displayMembers = (members) => {
         card.append(phone);
 
         cards.appendChild(card);
-    });
-}
-
-let filterMembers = (members) => {
-    members.forEach((member) => {
-
     });
 }
 
