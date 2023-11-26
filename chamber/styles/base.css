@@ -253,6 +253,28 @@ div.column2 img {
     grid-column: 1/2;
 }
 
+.call-to-action {
+    padding-bottom: 1.5em;
+}
+
+.call-to-action p {
+
+    padding-bottom: 1em;
+}
+
+.call-to-action a {
+    background-color: #523178;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 1em;
+}
+
+.call-to-action a:hover {
+    background-color: #6d34ad;
+}
+
 /*----------- FORM --------------*/
 main.form {
     flex-direction: column;
