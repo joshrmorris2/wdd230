@@ -11,20 +11,16 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <!--
-        need favicon
-    -->
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
     <link rel="icon" href="favicon.ico">
 
     <!--Social Media meta data below-->
     <meta property="og:title" content="Hillsboro Chamber of Commerce">
     <meta property="og:type" content="website">
-    <!--
-        need photo
-    -->
     <meta property="og:image"
         content="https://t3.ftcdn.net/jpg/04/42/14/72/240_F_442147241_QBRqYGDsC4lYAt7tJY1HSjjcJBRqVNSY.jpg">
     <meta property="og:url" content="https://joshrmorris2.github.io/wdd230/">
+
     <!--Open Sans from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,10 +101,12 @@
             </section>
             <section class="griditem3">
                 <h2>Events</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti quis dolores delectus odio
-                    culpa
-                    eligendi iusto ad, enim explicabo fuga amet non quod alias facere quo obcaecati. Ipsam, quisquam.
-                </p>
+                <h3>First Friday Monthly Business Seminar</h3>
+                <p>Topic: Business communication</p>
+                <h3>Wednesday Night Town Hall</h3>
+                <p>Join us every Wednesday at 7pm</p>
+                <h3>Third Friday Meal Prep</h3>
+                <p>Learn about meal prep and donate meals to those in need</p>
             </section>
             <section class="griditem4">
                 <h2>Attractions</h2>
@@ -118,11 +116,7 @@
 
             </section>
             <section class="griditem5">
-                <h2>Calendar</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae necessitatibus non maiores itaque ullam
-                    quia esse aliquid quod, cupiditate debitis, corporis ipsam, sit consectetur commodi accusantium
-                    eaque
-                    unde architecto quos.</p>
+                <div id='calendar'></div>
             </section>
             <section class="griditem6">
                 <h2><span id="lastvisit"></span></h2>
@@ -135,6 +129,11 @@
         <p>This is a fictional site for web development education.</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <script>
+        // Create a new calendar
+        jSuites.calendar(document.getElementById('calendar'), { format: 'YYYY-MM-DD', onupdate: function (a, b) { document.getElementById('calendar-value').innerText = b; } });
+    </script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/lastvisit.js"></script>
 </body>
