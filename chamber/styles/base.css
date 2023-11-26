@@ -302,6 +302,7 @@ form label.top textarea {
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: .5em;
 }
 
 form label.sbs {
