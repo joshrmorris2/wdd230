@@ -1,0 +1,112 @@
+{
+    "vehicle": [
+        {
+            "make": "Honda",
+            "model": "Metro",
+            "type": "Scooter",
+            "seats": 1,
+            "halfday": [
+                {
+                    "reserve": 20,
+                    "walk": 25
+                }
+            ],
+            "fullday": [
+                {
+                    "reserve": 30,
+                    "walk": 35
+                }
+            ]
+        },
+        {
+            "make": "Honda",
+            "model": "Dio",
+            "type": "Scooter",
+            "seats": 2,
+            "halfday": [
+                {
+                    "reserve": 30,
+                    "walk": 35
+                }
+            ],
+            "fullday": [
+                {
+                    "reserve": 40,
+                    "walk": 45
+                }
+            ]
+        },
+        {
+            "make": "Honda",
+            "model": "PCX150",
+            "type": "Scooter",
+            "seats": 2,
+            "halfday": [
+                {
+                    "reserve": 40,
+                    "walk": 45
+                }
+            ],
+            "fullday": [
+                {
+                    "reserve": 50,
+                    "walk": 55
+                }
+            ]
+        },
+        {
+            "make": "Honda",
+            "model": "Pioneer",
+            "seats": 4,
+            "type": "ATV",
+            "halfday": [
+                {
+                    "reserve": 50,
+                    "walk": 60
+                }
+            ],
+            "fullday": [
+                {
+                    "reserve": 70,
+                    "walk": 80
+                }
+            ]
+        },
+        {
+            "make": "Jeep",
+            "model": "Wrangler",
+            "type": "2 door",
+            "seats": 4,
+            "halfday": [
+                {
+                    "reserve": 60,
+                    "walk": 70
+                }
+            ],
+            "fullday": [
+                {
+                    "reserve": 85,
+                    "walk": 90
+                }
+            ]
+        },
+        {
+            "make": "Jeep",
+            "model": "Wrangler",
+            "type": "4 door with a/c",
+            "seats": 5,
+            "halfday": [
+                {
+                    "reserve": 70,
+                    "walk": 85
+                }
+            ],
+            "fullday": [
+                {
+                    "reserve": 100,
+                    "walk": 125
+                }
+            ]
+        }
+    ]
+}

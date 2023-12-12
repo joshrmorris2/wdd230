@@ -10,9 +10,6 @@ const lon = '-86.9';
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
 const forecasturl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
 
-console.log(url);
-console.log(forecasturl);
-
 async function apiFetch() {
     try {
         const response = await fetch(url);
