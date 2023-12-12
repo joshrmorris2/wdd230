@@ -1,0 +1,106 @@
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const weatherDesc = document.querySelector('#weather-description');
+const humidity = document.querySelector('#humidity');
+const threeDayFor = document.querySelector('#threedayforecast');
+
+const lat = '20.4';
+const lon = '-86.9';
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
+const forecasturl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
+
+console.log(url);
+console.log(forecasturl);
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    };
+    try {
+        const response = await fetch(forecasturl);
+        if (response.ok) {
+            const data = await response.json();
+            displayForecast(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    };
+};
+
+apiFetch();
+
+function displayResults(data) {
+    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    humidity.innerHTML = `Humidity ${data.main.humidity}%`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+
+    weatherDesc.textContent = `${desc}`;
+}
+
+function displayForecast(data) {
+    const currentDate = new Date();
+    const headers = document.createElement('div');
+    for (let i = 1; i <= 3; i++) {
+        const today = document.createElement('h3');
+        today.textContent = dayOfWeek(currentDate.getDay() + i);
+        headers.appendChild(today);
+    }
+
+    const temperatures = document.createElement('div');
+    data.list.forEach((day) => {
+        switch (day.dt_txt) {
+            default:
+                break;
+            case `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate() + 1} 12:00:00`:
+            case `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate() + 2} 12:00:00`:
+            case `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate() + 3} 12:00:00`:
+
+                const todaytemp = document.createElement('p');
+
+                todaytemp.innerHTML = `${day.main.temp} &deg;F`;
+                temperatures.appendChild(todaytemp);
+        }
+
+    });
+    threeDayFor.appendChild(headers);
+    threeDayFor.appendChild(temperatures);
+}
+
+function dayOfWeek(day) {
+    if (day >= 7) {
+        day -= 7;
+    }
+    switch (day) {
+
+        case 0:
+            return 'Sunday';
+        case 1:
+            return 'Monday';
+        case 2:
+            return 'Tuesday';
+        case 3:
+            return 'Wednesday';
+        case 4:
+            return 'Thursday';
+        case 5:
+            return 'Friday';
+        case 6:
+            return 'Saturday';
+        default:
+            return 'Error';
+    }
+}

@@ -44,6 +44,7 @@
         </ul>
     </nav>
     <main>
+        <div id="banner"></div>
         <section id="hero-image">
             <picture>
                 <source media="(max-width: 500px)" srcset="images/500px/hero-image.webp">
@@ -61,7 +62,9 @@
         </section>
         <section id="rental-info">
             <h2>Rental Info</h2>
-            <p></p>
+            <p>We have a small array of vehicles available, ranging from 1-5 person capacity. If your rental is 2+ days,
+                we offer free delivery to hotels or Airbnbs. Unlimited mileage, enjoy your visit without suprise
+                charges. Rentals may be returned to either physical location.</p>
         </section>
         <section id="socials">
             <h2>Social Media</h2>
@@ -69,6 +72,11 @@
         </section>
         <section id="weather">
             <h2>Weather Info</h2>
+            <img src=null alt="Icon for current weather" id="weather-icon">
+            <span id="current-temp"></span>
+            <p id="weather-description"></p>
+            <p id="humidity"></p>
+            <h3 id="threedayforecast">3-Day Forecast</h3>
         </section>
     </main>
     <footer>
@@ -76,6 +84,9 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
