@@ -44,7 +44,43 @@
         </ul>
     </nav>
     <main>
-
+        <h2>Secure your reservation today!</h2>
+        <!--rental agreement info here-->
+        <form action="thankyou.html" method="get">
+            <!--rental type and time(date, period, rental type, number,)  -->
+            <fieldset>
+                <label for="">Date of reservation <input type="date" id="date" name="date" required></label>
+                <label for="">Rental duration <!--Dropdown from 1/2 day to 14 days--></label>
+            </fieldset>
+            <fieldset>
+                <h3>Vehicle</h3>
+                <label for=""><input type="radio" name="vehicle" value="v0">Mazda Metro Scooter</label>
+                <label for=""><input type="radio" name="vehicle" value="v1">Mazda Dio Scooter</label>
+                <label for=""><input type="radio" name="vehicle" value="v2">Mazda PCX150 Scooter</label>
+                <label for=""><input type="radio" name="vehicle" value="v3">Mazda Pioneer ATV</label>
+                <label for=""><input type="radio" name="vehicle" value="v4">Jeep Wrangler - 2 door</label>
+                <label for=""><input type="radio" name="vehicle" value="v5">Jeep Wrangler - 4 door with a/c</label>
+            </fieldset>
+            <!--contact info(phone number, name, email, home state or country, cruise line if applicable)-->
+            <fieldset>
+                <label for="">First Name <input type="text" id="firstName" name="fname" required></label>
+                <label for="">Last Name <input type="text" id="lastName" name="lname" required></label>
+                <label for="">Phone number <input type="tel" id="phone" name="phone" required></label>
+                <label for="">Email <input type="email" name="email" id="email" required></label>
+                <label for="">Home state or country</label>
+                <label for="">Cruise Line <input type="text" name="cruiseLine" id="cruiseLine"></label>
+            </fieldset>
+            <!--special accommodations/comments-->
+            <fieldset>
+                <label for="">Drop-off request <!----></label>
+                <label for="">Drop-off instructions
+                    <textarea name="dropOffInstructions" id="dropOffInfo" cols="30" rows="10"></textarea>
+                </label>
+                <label for="">Additional info
+                    <textarea name="additionalInfo" id="addInfo" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>©<span id="year"></span>, Josh Morris, Oregon, USA</p>
