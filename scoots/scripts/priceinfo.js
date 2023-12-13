@@ -27,10 +27,10 @@ displayPriceTable = (vehicles) => {
 
         row.append(type,
             seats,
-            walkhalf,
             reshalf,
-            walkfull,
-            resfull);
+            walkhalf,
+            resfull,
+            walkfull);
 
         pricetable.appendChild(row);
     });
