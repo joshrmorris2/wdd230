@@ -162,6 +162,27 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+table {
+    width: 90%;
+    background-color: var(--main-bg-color);
+}
+
+#pricetable tr:first-child {
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+}
+
+table,
+th,
+td {
+    border: 1px solid #575656;
+    min-width: 100px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
 footer {
     background-color: var(--main-color);
     color: var(--main-bg-color);
