@@ -22,7 +22,7 @@ header {
 /* The switch - the box around the slider */
 .switch {
     position: absolute;
-    top: 4em;
+    top: 4rem;
     right: 1.56em;
     display: inline-block;
     width: 60px;
