@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     switchBox.addEventListener('change', () => {
         if (switchBox.checked) {
-            body.style.background = '#000';
-            body.style.color = '#F3EAF4';
+            body.style.background = '#131515';
+            body.style.color = '#e9eff7';
         } else {
-            body.style.background = '#F3EAF4';
-            body.style.color = '#000';
+            body.style.background = '#e9eff7';
+            body.style.color = '#131515';
         }
     });
 });
