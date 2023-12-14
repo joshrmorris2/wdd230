@@ -49,48 +49,44 @@
         <form action="thankyou.html" method="get">
             <!--rental type and time(date, period, rental type, number,)  -->
             <fieldset>
-                <label for="">Date of reservation <input type="date" id="date" name="date" required></label>
-                <label for="duration">Rental duration</label>
-                <select name="duration" id="duration">
-                    <option value="0">half day (3 hrs)</option>
-                    <option value="1">1 day</option>
-                    <option value="2">2 days</option>
-                    <option value="3">3 days</option>
-                    <option value="4">4 days</option>
-                    <option value="5">5 days</option>
-                    <option value="6">6 days</option>
-                    <option value="7">7 days</option>
-                    <option value="8">8 days</option>
-                    <option value="9">9 days</option>
-                    <option value="10">10 days</option>
-                    <option value="11">11 days</option>
-                    <option value="12">12 days</option>
-                    <option value="13">13 days</option>
-                    <option value="14">14 days</option>
+                <label class="top">Date of reservation <input type="date" id="date" name="date" required></label>
+                <label class="top" for="duration">Rental duration
+                    <select name="duration" id="duration"></label>
+                <option value="0">half day (3 hrs)</option>
+                <option value="1">1 day</option>
+                <option value="2">2 days</option>
+                <option value="3">3 days</option>
+                <option value="4">4 days</option>
+                <option value="5">5 days</option>
+                <option value="6">6 days</option>
+                <option value="7">7 days</option>
+                <option value="8">8 days</option>
+                <option value="9">9 days</option>
+                <option value="10">10 days</option>
+                <option value="11">11 days</option>
+                <option value="12">12 days</option>
+                <option value="13">13 days</option>
+                <option value="14">14 days</option>
                 </select>
             </fieldset>
             <fieldset>
                 <h3>Vehicle</h3>
-                <label for=""><input type="radio" name="vehicle" value="v0">Mazda Metro Scooter <span
-                        class="price"></span></label>
-                <label for=""><input type="radio" name="vehicle" value="v1">Mazda Dio Scooter <span
-                        class="price"></span></label>
-                <label for=""><input type="radio" name="vehicle" value="v2">Mazda PCX150 Scooter <span
-                        class="price"></span></label>
-                <label for=""><input type="radio" name="vehicle" value="v3">Mazda Pioneer ATV <span
-                        class="price"></span></label>
-                <label for=""><input type="radio" name="vehicle" value="v4">Jeep Wrangler - 2 door <span
-                        class="price"></span></label>
-                <label for=""><input type="radio" name="vehicle" value="v5">Jeep Wrangler - 4 door with a/c <span
-                        class="price"></span></label>
+                <label class="sbs"><input type="radio" name="vehicle" value="v0">Mazda Metro Scooter </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="v1">Mazda Dio Scooter </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="v2">Mazda PCX150 Scooter </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="v3">MazdaPioneer ATV </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="v4">Jeep Wrangler - 2 door
+                </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="v5">Jeep Wrangler -4 door with a/c
+                </label>
             </fieldset>
             <!--contact info(phone number, name, email, home state or country, cruise line if applicable)-->
             <fieldset>
-                <label for="">First Name <input type="text" id="firstName" name="fname" required></label>
-                <label for="">Last Name <input type="text" id="lastName" name="lname" required></label>
-                <label for="">Phone number <input type="tel" id="phone" name="phone" required></label>
-                <label for="">Email <input type="email" name="email" id="email" required></label>
-                <label for="">Home state or country <input type="text" list="stateorCountry">
+                <label class="top">First Name <input type="text" id="firstName" name="fname" required></label>
+                <label class="top">Last Name <input type="text" id="lastName" name="lname" required></label>
+                <label class="top">Phone number <input type="tel" id="phone" name="phone" required></label>
+                <label class="top">Email <input type="email" name="email" id="email" required></label>
+                <label class="top">Home state or country <input type="text" list="stateorCountry">
                     <datalist id="stateorCountry">
                         <!--countries-->
                         <option value="C_AF">Afghanistan</option>
@@ -268,18 +264,21 @@
                         <option value="S_WI">Wisconsin</option>
                         <option value="S_WY">Wyoming</option>
                     </datalist></label>
-                <label for="">Cruise Line <input type="text" name="cruiseLine" id="cruiseLine"></label>
+                <label class="top">Cruise Line <input type="text" name="cruiseLine" id="cruiseLine"></label>
             </fieldset>
             <!--special accommodations/comments-->
             <fieldset>
-                <label for="">Drop-off request <input type="bool" name="" id="dropChoice" disabled></label>
-                <label for="">Drop-off instructions
+                <label class="top">Do you need your rental delivered?(Drop-off) <input type="checkbox" name="yes"
+                        id="dropChoice" disabled></label>
+                <label class="top">Drop-off instructions
                     <textarea name="dropOffInstructions" id="dropInfo" cols="30" rows="10" disabled></textarea>
                 </label>
-                <label for="">Additional info
+                <label class="top">Additional info
                     <textarea name="additionalInfo" id="addInfo" cols="30" rows="10"></textarea>
                 </label>
+                <button type="submit">Reserve</button>
             </fieldset>
+
         </form>
     </main>
     <footer>
