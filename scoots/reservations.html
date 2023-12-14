@@ -50,16 +50,39 @@
             <!--rental type and time(date, period, rental type, number,)  -->
             <fieldset>
                 <label for="">Date of reservation <input type="date" id="date" name="date" required></label>
-                <label for="">Rental duration <!--Dropdown from 1/2 day to 14 days--></label>
+                <label for="duration">Rental duration</label>
+                <select name="duration" id="duration">
+                    <option value="0">half day (3 hrs)</option>
+                    <option value="1">1 day</option>
+                    <option value="2">2 days</option>
+                    <option value="3">3 days</option>
+                    <option value="4">4 days</option>
+                    <option value="5">5 days</option>
+                    <option value="6">6 days</option>
+                    <option value="7">7 days</option>
+                    <option value="8">8 days</option>
+                    <option value="9">9 days</option>
+                    <option value="10">10 days</option>
+                    <option value="11">11 days</option>
+                    <option value="12">12 days</option>
+                    <option value="13">13 days</option>
+                    <option value="14">14 days</option>
+                </select>
             </fieldset>
             <fieldset>
                 <h3>Vehicle</h3>
-                <label for=""><input type="radio" name="vehicle" value="v0">Mazda Metro Scooter</label>
-                <label for=""><input type="radio" name="vehicle" value="v1">Mazda Dio Scooter</label>
-                <label for=""><input type="radio" name="vehicle" value="v2">Mazda PCX150 Scooter</label>
-                <label for=""><input type="radio" name="vehicle" value="v3">Mazda Pioneer ATV</label>
-                <label for=""><input type="radio" name="vehicle" value="v4">Jeep Wrangler - 2 door</label>
-                <label for=""><input type="radio" name="vehicle" value="v5">Jeep Wrangler - 4 door with a/c</label>
+                <label for=""><input type="radio" name="vehicle" value="v0">Mazda Metro Scooter <span
+                        class="price"></span></label>
+                <label for=""><input type="radio" name="vehicle" value="v1">Mazda Dio Scooter <span
+                        class="price"></span></label>
+                <label for=""><input type="radio" name="vehicle" value="v2">Mazda PCX150 Scooter <span
+                        class="price"></span></label>
+                <label for=""><input type="radio" name="vehicle" value="v3">Mazda Pioneer ATV <span
+                        class="price"></span></label>
+                <label for=""><input type="radio" name="vehicle" value="v4">Jeep Wrangler - 2 door <span
+                        class="price"></span></label>
+                <label for=""><input type="radio" name="vehicle" value="v5">Jeep Wrangler - 4 door with a/c <span
+                        class="price"></span></label>
             </fieldset>
             <!--contact info(phone number, name, email, home state or country, cruise line if applicable)-->
             <fieldset>
@@ -67,14 +90,191 @@
                 <label for="">Last Name <input type="text" id="lastName" name="lname" required></label>
                 <label for="">Phone number <input type="tel" id="phone" name="phone" required></label>
                 <label for="">Email <input type="email" name="email" id="email" required></label>
-                <label for="">Home state or country</label>
+                <label for="">Home state or country <input type="text" list="stateorCountry">
+                    <datalist id="stateorCountry">
+                        <!--countries-->
+                        <option value="C_AF">Afghanistan</option>
+                        <option value="C_AO">Angola</option>
+                        <option value="C_AR">Argentina</option>
+                        <option value="C_AU">Australia</option>
+                        <option value="C_AT">Austria</option>
+                        <option value="C_AZ">Azerbaijan</option>
+                        <option value="C_BD">Bangladesh</option>
+                        <option value="C_BY">Belarus</option>
+                        <option value="C_BE">Belgium</option>
+                        <option value="C_BJ">Benin</option>
+                        <option value="C_BT">Bhutan</option>
+                        <option value="C_BO">Bolivia</option>
+                        <option value="C_BA">Bosnia and Herzegovina</option>
+                        <option value="C_BR">Brazil</option>
+                        <option value="C_BG">Bulgaria</option>
+                        <option value="C_CA">Canada</option>
+                        <option value="C_CI">Côte d'Ivoire</option>
+                        <option value="C_CL">Chile</option>
+                        <option value="C_CN">China</option>
+                        <option value="C_CO">Colombia</option>
+                        <option value="C_HR">Croatia</option>
+                        <option value="C_CU">Cuba</option>
+                        <option value="C_CY">Cyprus</option>
+                        <option value="C_CZ">Czech Republic</option>
+                        <option value="C_CD">Democratic Republic of the Congo</option>
+                        <option value="C_DK">Denmark</option>
+                        <option value="C_DO">Dominican Republic</option>
+                        <option value="C_EC">Ecuador</option>
+                        <option value="C_EG">Egypt</option>
+                        <option value="C_SV">El Salvador</option>
+                        <option value="C_GQ">Equatorial Guinea</option>
+                        <option value="C_ER">Eritrea</option>
+                        <option value="C_EE">Estonia</option>
+                        <option value="C_ET">Ethiopia</option>
+                        <option value="C_SZ">Eswatini</option>
+                        <option value="C_FI">Finland</option>
+                        <option value="C_FR">France</option>
+                        <option value="C_GE">Georgia</option>
+                        <option value="C_DE">Germany</option>
+                        <option value="C_GH">Ghana</option>
+                        <option value="C_GR">Greece</option>
+                        <option value="C_GT">Guatemala</option>
+                        <option value="C_GN">Guinea</option>
+                        <option value="C_GY">Guyana</option>
+                        <option value="C_HT">Haiti</option>
+                        <option value="C_HN">Honduras</option>
+                        <option value="C_HU">Hungary</option>
+                        <option value="C_IS">Iceland</option>
+                        <option value="C_IN">India</option>
+                        <option value="C_ID">Indonesia</option>
+                        <option value="C_IR">Iran</option>
+                        <option value="C_IQ">Iraq</option>
+                        <option value="C_IE">Ireland</option>
+                        <option value="C_IL">Israel</option>
+                        <option value="C_IT">Italy</option>
+                        <option value="C_JP">Japan</option>
+                        <option value="C_JO">Jordan</option>
+                        <option value="C_KZ">Kazakhstan</option>
+                        <option value="C_KE">Kenya</option>
+                        <option value="C_KP">North Korea</option>
+                        <option value="C_KR">South Korea</option>
+                        <option value="C_KW">Kuwait</option>
+                        <option value="C_KG">Kyrgyzstan</option>
+                        <option value="C_LA">Laos</option>
+                        <option value="C_LV">Latvia</option>
+                        <option value="C_LB">Lebanon</option>
+                        <option value="C_LS">Lesotho</option>
+                        <option value="C_LR">Liberia</option>
+                        <option value="C_LY">Libya</option>
+                        <option value="C_LT">Lithuania</option>
+                        <option value="C_LU">Luxembourg</option>
+                        <option value="C_MK">North Macedonia</option>
+                        <option value="C_MG">Madagascar</option>
+                        <option value="C_MW">Malawi</option>
+                        <option value="C_MY">Malaysia</option>
+                        <option value="C_ML">Mali</option>
+                        <option value="C_MR">Mauritania</option>
+                        <option value="C_MX">Mexico</option>
+                        <option value="C_MD">Moldova</option>
+                        <option value="C_MN">Mongolia</option>
+                        <option value="C_ME">Montenegro</option>
+                        <option value="C_MA">Morocco</option>
+                        <option value="C_MZ">Mozambique</option>
+                        <option value="C_MM">Myanmar</option>
+                        <option value="C_NA">Namibia</option>
+                        <option value="C_NP">Nepal</option>
+                        <option value="C_NL">Netherlands</option>
+                        <option value="C_NZ">New Zealand</option>
+                        <option value="C_NI">Nicaragua</option>
+                        <option value="C_NE">Niger</option>
+                        <option value="C_NG">Nigeria</option>
+                        <option value="C_NO">Norway</option>
+                        <option value="C_OM">Oman</option>
+                        <option value="C_PK">Pakistan</option>
+                        <option value="C_PA">Panama</option>
+                        <option value="C_PY">Paraguay</option>
+                        <option value="C_PE">Peru</option>
+                        <option value="C_PH">Philippines</option>
+                        <option value="C_PL">Poland</option>
+                        <option value="C_PT">Portugal</option>
+                        <option value="C_QA">Qatar</option>
+                        <option value="C_RO">Romania</option>
+                        <option value="C_RU">Russia</option>
+                        <option value="C_RW">Rwanda</option>
+                        <option value="C_SA">Saudi Arabia</option>
+                        <option value="C_SN">Senegal</option>
+                        <option value="C_RS">Serbia</option>
+                        <option value="C_SL">Sierra Leone</option>
+                        <option value="C_SG">Singapore</option>
+                        <option value="C_SK">Slovakia</option>
+                        <option value="C_SI">Slovenia</option>
+                        <option value="C_SO">Somalia</option>
+                        <option value="C_ZA">South Africa</option>
+                        <option value="C_ES">Spain</option>
+                        <option value="C_LK">Sri Lanka</option>
+                        <option value="C_SD">Sudan</option>
+                        <option value="C_SR">Suriname</option>
+                        <option value="C_SE">Sweden</option>
+                        <option value="C_CH">Switzerland</option>
+                        <option value="C_SY">Syria</option>
+                        <option value="C_TW">Taiwan</option>
+                        <option value="C_TJ">Tajikistan</option>
+                        <option value="C_TZ">Tanzania</option>
+                        <!--states-->
+                        <option value="S_AL">Alabama</option>
+                        <option value="S_AK">Alaska</option>
+                        <option value="S_AZ">Arizona</option>
+                        <option value="S_AR">Arkansas</option>
+                        <option value="S_CA">California</option>
+                        <option value="S_CO">Colorado</option>
+                        <option value="S_CT">Connecticut</option>
+                        <option value="S_DE">Delaware</option>
+                        <option value="S_FL">Florida</option>
+                        <option value="S_GA">Georgia</option>
+                        <option value="S_HI">Hawaii</option>
+                        <option value="S_ID">Idaho</option>
+                        <option value="S_IL">Illinois</option>
+                        <option value="S_IN">Indiana</option>
+                        <option value="S_IA">Iowa</option>
+                        <option value="S_KS">Kansas</option>
+                        <option value="S_KY">Kentucky</option>
+                        <option value="S_LA">Louisiana</option>
+                        <option value="S_ME">Maine</option>
+                        <option value="S_MD">Maryland</option>
+                        <option value="S_MA">Massachusetts</option>
+                        <option value="S_MI">Michigan</option>
+                        <option value="S_MN">Minnesota</option>
+                        <option value="S_MS">Mississippi</option>
+                        <option value="S_MO">Missouri</option>
+                        <option value="S_MT">Montana</option>
+                        <option value="S_NE">Nebraska</option>
+                        <option value="S_NV">Nevada</option>
+                        <option value="S_NH">New Hampshire</option>
+                        <option value="S_NJ">New Jersey</option>
+                        <option value="S_NM">New Mexico</option>
+                        <option value="S_NY">New York</option>
+                        <option value="S_NC">North Carolina</option>
+                        <option value="S_ND">North Dakota</option>
+                        <option value="S_OH">Ohio</option>
+                        <option value="S_OK">Oklahoma</option>
+                        <option value="S_OR">Oregon</option>
+                        <option value="S_PA">Pennsylvania</option>
+                        <option value="S_RI">Rhode Island</option>
+                        <option value="S_SC">South Carolina</option>
+                        <option value="S_SD">South Dakota</option>
+                        <option value="S_TN">Tennessee</option>
+                        <option value="S_TX">Texas</option>
+                        <option value="S_UT">Utah</option>
+                        <option value="S_VT">Vermont</option>
+                        <option value="S_VA">Virginia</option>
+                        <option value="S_WA">Washington</option>
+                        <option value="S_WV">West Virginia</option>
+                        <option value="S_WI">Wisconsin</option>
+                        <option value="S_WY">Wyoming</option>
+                    </datalist></label>
                 <label for="">Cruise Line <input type="text" name="cruiseLine" id="cruiseLine"></label>
             </fieldset>
             <!--special accommodations/comments-->
             <fieldset>
-                <label for="">Drop-off request <!----></label>
+                <label for="">Drop-off request <input type="bool" name="" id="dropChoice" disabled></label>
                 <label for="">Drop-off instructions
-                    <textarea name="dropOffInstructions" id="dropOffInfo" cols="30" rows="10"></textarea>
+                    <textarea name="dropOffInstructions" id="dropInfo" cols="30" rows="10" disabled></textarea>
                 </label>
                 <label for="">Additional info
                     <textarea name="additionalInfo" id="addInfo" cols="30" rows="10"></textarea>
@@ -89,6 +289,7 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/footer.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
